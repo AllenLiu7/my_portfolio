@@ -1,0 +1,21 @@
+.header {
+  height: 150px;
+  width: 100%;
+  display: flex;
+
+  margin-bottom: 25px;
+
+  .options {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .option {
+      padding: 10px 40px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+  }
+}
