@@ -1,0 +1,21 @@
+.card-list {
+  &__title {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 500;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+    grid-gap: 10px;
+    padding: 50px 300px 100px 300px;
+    margin-top: 100px;
+    justify-content: center;
+  }
+
+  .heading {
+    font-size: 5rem;
+  }
+}

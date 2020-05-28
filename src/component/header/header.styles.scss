@@ -1,6 +1,7 @@
 .header {
+  position: fixed;
   height: 150px;
-  width: 100%;
+  width: 100vw;
   display: flex;
 
   margin-bottom: 25px;
@@ -13,6 +14,7 @@
     justify-content: flex-end;
 
     .option {
+      font-size: 2rem;
       padding: 10px 40px;
       cursor: pointer;
       font-weight: 600;

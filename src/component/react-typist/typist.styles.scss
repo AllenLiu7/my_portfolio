@@ -1,0 +1,26 @@
+.Typist .Cursor {
+  position: absolute;
+
+  &--blinking {
+    opacity: 1;
+    animation: blink 1s linear infinite;
+    @keyframes blink {
+      0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.MyTypist {
+  font-size: 50px;
+  font-weight: 500;
+  top: 400px;
+  margin-left: 200px;
+}

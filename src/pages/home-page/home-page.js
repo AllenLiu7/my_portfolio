@@ -1,8 +1,11 @@
 import React from 'react';
 import Layout from '../../component/layout/layout.component';
-import Typist from 'react-typist';
-import './home-page.scss';
+import ProjectList from '../../component/project-list/project-list.component';
+import MyTypist from '../../component/react-typist/typist.component';
+import Scrolldown from '../../component/scrolldown-icon/scrolldown-icon.component';
 import BIRDS from 'vanta/dist/vanta.birds.min';
+
+import './home-page.scss';
 
 class Homepage extends React.Component {
   constructor() {
@@ -18,10 +21,17 @@ class Homepage extends React.Component {
       minWidth: 200.0,
       scale: 1.0,
       scaleMobile: 1.0,
-      backgroundColor: 0xf9f9f9,
-      birdSize: 2.8,
+      backgroundColor: 0xffffff,
+      color1: 0xfe3f42,
+      color2: 0xfcb8bd,
+      colorMode: 'lerpGradient',
+      birdSize: 1.7,
       wingSpan: 27.0,
-      quantity: 1.0,
+      speedLimit: 6.0,
+      separation: 26.0,
+      alignment: 69.0,
+      cohesion: 49.0,
+      quantity: 2.0,
     });
   }
   componentWillUnmount() {
@@ -30,19 +40,14 @@ class Homepage extends React.Component {
   render() {
     return (
       <Layout>
-        <div className='container' ref={this.vantaRef}>
-          <Typist
-            className='MyTypist1'
-            startDelay={1500}
-            cursor={{ show: true }}
-          >
-            <span className='first'>Hi, I am Allen liu.</span>
-            <Typist.Backspace count={4} delay={1000} />
-            <span>Liu.🤘</span>
-            <Typist.Delay ms={1250} />
-            <br />
-            <span>I am a self taught web developer.</span>
-          </Typist>
+        <div className='landing' ref={this.vantaRef}>
+          <MyTypist />
+          <div className='scroll-down'>
+            <Scrolldown />
+          </div>
+        </div>
+        <div className='project-list'>
+          <ProjectList />
         </div>
       </Layout>
     );
