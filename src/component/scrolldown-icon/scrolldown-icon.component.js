@@ -4,7 +4,7 @@ import './scrolldown-icon.styles.scss';
 export default function Scrolldown() {
   return (
     <>
-      <div class='scroll'></div>
+      <div className='scroll'></div>
     </>
   );
 }

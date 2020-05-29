@@ -1,5 +1,6 @@
 import React from 'react';
 import Typist from 'react-typist';
+import Fade from 'react-reveal/Fade';
 import './typist.styles.scss';
 
 export default function MyTypist() {
@@ -10,13 +11,14 @@ export default function MyTypist() {
         startDelay={1500}
         cursor={{ show: true, hideWhenDone: true }}
       >
-        <span className='first'>Hi, I am Allen liu.</span>
-        <Typist.Backspace count={4} delay={1000} />
-        <span>Liu.🤘</span>
-        <Typist.Delay ms={1250} />
-        <br />
-        <span>I am a self taught web developer.</span>
+        <span className='first'>Hi, I am Allen Liu.</span>
       </Typist>
+      <div className='fade-content'>
+        <Fade delay={4200}>
+          <br />
+          <span>I am a self-taught full stack web developer.</span>
+        </Fade>
+      </div>
     </>
   );
 }
