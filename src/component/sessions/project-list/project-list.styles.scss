@@ -1,5 +1,5 @@
-.card-list {
-  margin-top: 300px;
+.project-list {
+  margin-top: 400px;
 
   &__title {
     text-align: center;
@@ -14,7 +14,7 @@
     }
   }
 
-  &__container {
+  &__card-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
     grid-gap: 10px;
@@ -23,7 +23,8 @@
     justify-content: center;
   }
 
-  .heading {
-    font-size: 5rem;
+  &__buttons {
+    text-align: center;
+    margin-top: 100px;
   }
 }

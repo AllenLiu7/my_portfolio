@@ -1,0 +1,25 @@
+.tech-list {
+  &__session {
+    margin-top: 300px;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 500;
+  }
+
+  &__title-bar {
+    background: black;
+    height: 4px;
+    width: 100px;
+    margin: 30px auto 0 auto;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 200px;
+  }
+}

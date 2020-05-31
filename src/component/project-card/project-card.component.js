@@ -3,7 +3,7 @@ import './project-card.styles.scss';
 
 export default function ProjectCard({ imageUrl, title }) {
   return (
-    <div className='card__container'>
+    <div className='project-card__container'>
       <div className='hovereffect'>
         <img
           className='img-responsive'

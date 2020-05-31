@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ProjectCard from '../project-card/project-card.component';
+import ProjectCard from '../../project-card/project-card.component';
 import Fade from 'react-reveal/Fade';
 import './project-list.styles.scss';
 
@@ -64,18 +64,15 @@ export default class ProjectList extends Component {
     }
 
     return (
-      <div className='card-list'>
-        <button onClick={(e) => this.handleClick(e)}>All</button>
-        <button onClick={(e) => this.handleClick(e)}>React</button>
-        <button onClick={(e) => this.handleClick(e)}>Nodejs</button>
-        <button onClick={(e) => this.handleClick(e)}>jQuerry</button>
+      <div className='project-list'>
         <Fade left delay={200}>
-          <h1 className='card-list__title'>Projects</h1>
+          <h1 className='project-list__title'>Projects</h1>
         </Fade>
         <Fade right>
-          <div className='card-list__title-bar'></div>
+          <div className='project-list__title-bar'></div>
         </Fade>
-        <div className='card-list__container'>
+
+        <div className='project-list__card-container'>
           {showProjects.map(({ id, ...otherProjectProps }) => (
             <Fade delay={300}>
               <ProjectCard key={id} {...otherProjectProps} />
