@@ -19,7 +19,12 @@
   &__container {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
-    margin-top: 200px;
+    margin-top: 150px;
+  }
+
+  &__card {
+    margin: 0 50px 0 50px;
   }
 }

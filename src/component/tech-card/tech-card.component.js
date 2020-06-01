@@ -1,23 +1,15 @@
 import React from 'react';
 import './tech-card.style.scss';
-import '../../assets/icon/iconmonstr-wrench-2-240.png';
 
-export default function TechCard({ title, tech, iconUrl }) {
+export default function TechCard({ content: { title, tech } }) {
   return (
-    <div class='tech-card__container'>
-      <div class='tech-card__card'>
-        <a href='hottub'>
-          <div class='card--display'>
-            <img src={require('../../' + `${iconUrl}`)} alt='' />
-            <h2>{title}</h2>
-          </div>
-          <div class='card--hover'>
-            {tech.map((item) => (
-              <div>{item}</div>
-            ))}
-          </div>
-        </a>
-        <div class='card--border'></div>
+    <div className='tech-card__container'>
+      <div className='tech-card__icon'></div>
+      <h1 className='tech-card__title'>{title}</h1>
+      <div className='tech-card__text'>
+        {tech.map((tech) => {
+          return <p>{tech}</p>;
+        })}
       </div>
     </div>
   );
