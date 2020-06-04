@@ -64,20 +64,22 @@ export default class ProjectList extends Component {
     }
 
     return (
-      <div className='project-list'>
-        <Fade left delay={200}>
-          <h1 className='project-list__title'>Projects</h1>
-        </Fade>
-        <Fade right>
-          <div className='project-list__title-bar'></div>
-        </Fade>
+      <div className='project-session'>
+        <div className='project-list'>
+          <Fade left delay={200}>
+            <h1 className='project-list__title'>Projects</h1>
+          </Fade>
+          <Fade right>
+            <div className='project-list__title-bar'></div>
+          </Fade>
 
-        <div className='project-list__card-container'>
-          {showProjects.map(({ id, ...otherProjectProps }) => (
-            <Fade delay={300}>
-              <ProjectCard key={id} {...otherProjectProps} />
-            </Fade>
-          ))}
+          <div className='project-list__card-container'>
+            {showProjects.map(({ id, ...otherProjectProps }) => (
+              <Fade delay={300}>
+                <ProjectCard key={id} {...otherProjectProps} />
+              </Fade>
+            ))}
+          </div>
         </div>
       </div>
     );

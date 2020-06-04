@@ -8,7 +8,7 @@ export default function TechCard({ content: { title, tech } }) {
       <h1 className='tech-card__title'>{title}</h1>
       <div className='tech-card__text'>
         {tech.map((tech) => {
-          return <p>{tech}</p>;
+          return <p className='hvr-buzz-out'>{tech}</p>;
         })}
       </div>
     </div>

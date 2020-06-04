@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Lottie from 'react-lottie';
 import animationData from '../../assets/icon/icon-others.json';
+import './icon.styles.scss';
 
 export default class IconFrontend extends Component {
   render() {
@@ -14,8 +15,8 @@ export default class IconFrontend extends Component {
     };
 
     return (
-      <div>
-        <Lottie options={defaultOptions} height={100} width={100} />
+      <div className='icon'>
+        <Lottie options={defaultOptions} />
       </div>
     );
   }

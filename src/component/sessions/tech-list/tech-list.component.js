@@ -56,12 +56,14 @@ export default function TechList() {
   };
   return (
     <div className='tech-list__session'>
-      <Fade left delay={200}>
-        <h1 className='tech-list__title'>Technology</h1>
-      </Fade>
-      <Fade right>
-        <div className='project-list__title-bar'></div>
-      </Fade>
+      <div className='tech-list__title'>
+        <Fade left delay={200}>
+          <h1 className='tech-list__title-text'>Technology</h1>
+        </Fade>
+        <Fade right>
+          <div className='tech-list__title-bar'></div>
+        </Fade>
+      </div>
 
       <div className='tech-list__container'>
         <div className='tech-list__card'>

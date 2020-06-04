@@ -1,0 +1,99 @@
+$color-primary: #f7af43;
+$color-primary-light: #f5bd23;
+$color-white: #fff;
+
+.btn {
+  &,
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    /*here <a> is treated as TEXT*/
+    text-decoration: none;
+    display: inline-block;
+    padding: 1rem 6rem;
+    border-radius: 10rem;
+    transition: all 0.2s;
+    /*spesify all animation happened at this element*/
+    position: relative;
+
+    //change for the button element
+    border: none;
+    cursor: pointer;
+  }
+
+  &--animated {
+    animation: moveInBottom 0.7s 0.7s;
+    /*delay 0.7s to perform animation and the duration is 0.7s*/
+    animation-fill-mode: backwards;
+    /*set the state to 0% of the animation which is 0 opacity, very tricky!*/
+  }
+
+  &:hover {
+    transform: translateY(-0.3rem);
+    /*minus means goes up*/
+    box-shadow: 0 1rem 3rem rgba(7, 7, 7, 0.384);
+    /* horizontal, vertical, blur, color*/
+  }
+
+  &:active,
+  &:focus {
+    // remove the outline after clicking
+    outline: none;
+    transform: translateY(-0.3rem);
+    box-shadow: 0 0.5rem 1rem rgba(7, 7, 7, 0.384);
+  }
+
+  &--orange {
+    background-color: $color-primary-light;
+    color: $color-white;
+
+    &::after {
+      background-color: $color-primary-light;
+    }
+  }
+
+  /*here we create a sudo element behide the button, absolute position make it behide the button, the box of the sudo element is the button size*/
+  &::after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+
+  &:hover::after {
+    transform: scaleX(1.5) scaleY(1.5);
+    opacity: 0;
+    /*the sudo button will become larger at first, then becomes invisible*/
+  }
+}
+
+.btn-text {
+  &:link,
+  &:visited {
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid;
+    color: $color-primary-light;
+    font-weight: 600;
+    margin-top: 3rem;
+    transition: all 0.2s;
+    padding: 3px;
+  }
+  &:hover {
+    background-color: $color-primary-light;
+    color: white;
+    box-shadow: 0rem 1rem 2rem rgba($color: #000000, $alpha: 0.15);
+    //v h blur color
+    transform: translateY(-2px);
+  }
+  &:active {
+    box-shadow: 0rem 0.5rem 2rem rgba($color: #000000, $alpha: 0.15);
+    transform: translateY(0px);
+  }
+}

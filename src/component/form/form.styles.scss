@@ -1,0 +1,90 @@
+.contact {
+  width: 50%;
+  height: auto;
+  //margin: 300px auto 300px auto;
+  border-color: black;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  @media screen and (max-width: 500px) {
+    //flex-direction: column;
+  }
+
+  &__image {
+    img {
+      height: 300px;
+      width: 330px;
+    }
+  }
+
+  &__form {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .form {
+      width: 70%;
+      &__group {
+        position: relative;
+      }
+
+      &__input {
+        background: none;
+        background-color: white;
+        color: grey;
+        font-size: 18px;
+        padding: 10px 10px 10px 5px;
+        display: block;
+        width: 100%;
+        border: none;
+        border-radius: 0;
+        border-bottom: 1px solid grey;
+        margin: 40px 0;
+        &:focus {
+          outline: none;
+        }
+      }
+
+      &__message {
+        background: none;
+        background-color: white;
+        color: grey;
+        font-size: 18px;
+        padding: 10px 10px 10px 5px;
+        display: block;
+        width: 100%;
+        //border: none;
+        border-radius: 0;
+        border-bottom: 1px solid grey;
+        margin: 60px 0;
+      }
+
+      &__label {
+        color: grey;
+        font-size: 16px;
+        font-weight: normal;
+        position: absolute;
+        pointer-events: none;
+        left: 5px;
+        top: 10px;
+        transition: 300ms ease all;
+      }
+
+      .shrink {
+        top: -14px;
+        font-size: 12px;
+        color: black;
+      }
+
+      .shrink-text {
+        top: -30px;
+        font-size: 12px;
+        color: black;
+      }
+    }
+  }
+}

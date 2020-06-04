@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from '../../component/layout/layout.component';
 import ProjectList from '../../component/sessions/project-list/project-list.component';
 import TechList from '../../component/sessions/tech-list/tech-list.component';
+import Contact from '../../component/sessions/contact/contact.component';
 import MyTypist from '../../component/react-typist/typist.component';
 
 import BIRDS from 'vanta/dist/vanta.birds.min';
@@ -49,6 +50,7 @@ class Homepage extends React.Component {
         <div className='project-list'>
           <ProjectList />
         </div>
+        <Contact />
       </Layout>
     );
   }

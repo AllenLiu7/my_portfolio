@@ -11,7 +11,12 @@ export default function MyTypist() {
         startDelay={1500}
         cursor={{ show: true, hideWhenDone: true }}
       >
-        <span className='first'>Hi, I am Allen Liu.</span>
+        <span className='first'>
+          Hi, I am Allen Liu.{' '}
+          <span role='img' aria-label='cheers'>
+            🥳
+          </span>
+        </span>
       </Typist>
       <div className='fade-content'>
         <Fade delay={4200}>
