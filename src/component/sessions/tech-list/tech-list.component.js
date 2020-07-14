@@ -67,19 +67,19 @@ export default function TechList() {
 
       <div className='tech-list__container'>
         <div className='tech-list__card'>
-          <div className='div tech-list__card-icon'>
+          <div className='tech-list__card-icon'>
             <IconFrontend />
           </div>
           <TechCard content={techData.frontend} />
         </div>
         <div className='tech-list__card'>
-          <div className='div tech-list__card-icon'>
+          <div className='tech-list__card-icon'>
             <IconBackend />
           </div>
           <TechCard content={techData.backend} />
         </div>
         <div className='tech-list__card'>
-          <div className='div tech-list__card-icon'>
+          <div className='tech-list__card-icon'>
             <IconOthers />
           </div>
           <TechCard content={techData.others} />

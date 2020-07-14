@@ -7,38 +7,38 @@ export default class ProjectList extends Component {
   state = {
     projects: [
       {
-        title: 'Online Cloth Shop',
-        imageUrl: 'assets/images/Snipaste_2020-05-27_17-55-27.png',
+        title: 'React Passport Authorization system',
+        imageUrl: 'assets/images/react-passport.png',
         id: 1,
         tag: ['react'],
       },
       {
         title: 'Online Cloth Shop',
-        imageUrl: 'assets/images/Snipaste_2020-05-27_17-55-27.png',
+        imageUrl: 'assets/images/cloth-shop.png',
         id: 2,
         tag: ['react', 'nodejs'],
       },
       {
-        title: 'Online Cloth Shop',
-        imageUrl: 'assets/images/Snipaste_2020-05-27_17-55-27.png',
+        title: 'Book Manager',
+        imageUrl: 'assets/images/book-manager.png',
         id: 3,
         tag: [''],
       },
       {
-        title: 'Online Cloth Shop',
-        imageUrl: 'assets/images/Snipaste_2020-05-27_17-55-27.png',
+        title: 'Online Coffee Shop',
+        imageUrl: 'assets/images/coffee-shop.png',
         id: 4,
         tag: ['react'],
       },
       {
-        title: 'Online Cloth Shop',
-        imageUrl: 'assets/images/Snipaste_2020-05-27_17-55-27.png',
+        title: 'Travel Agent Website',
+        imageUrl: 'assets/images/travel-agent.png',
         id: 5,
         tag: ['react', 'nodejs'],
       },
       {
-        title: 'Online Cloth Shop',
-        imageUrl: 'assets/images/Snipaste_2020-05-27_17-55-27.png',
+        title: 'Course Rating API',
+        imageUrl: 'assets/images/course-rating-api.png',
         id: 6,
         tag: ['react', 'jquerry'],
       },
@@ -46,22 +46,8 @@ export default class ProjectList extends Component {
     filteredProjects: [],
   };
 
-  handleClick = (e) => {
-    console.log(e.target.innerHTML.toLowerCase());
-    let filtered = this.state.projects.filter((project) =>
-      project.tag.includes(e.target.innerHTML.toLowerCase())
-    );
-    this.setState({ filteredProjects: filtered });
-  };
-
   render() {
-    let showProjects;
-
-    if (this.state.filteredProjects.length === 0) {
-      showProjects = this.state.projects;
-    } else {
-      showProjects = this.state.filteredProjects;
-    }
+    const projects = this.state.projects;
 
     return (
       <div className='project-session'>
@@ -74,7 +60,7 @@ export default class ProjectList extends Component {
           </Fade>
 
           <div className='project-list__card-container'>
-            {showProjects.map(({ id, ...otherProjectProps }) => (
+            {projects.map(({ id, ...otherProjectProps }) => (
               <Fade delay={300}>
                 <ProjectCard key={id} {...otherProjectProps} />
               </Fade>

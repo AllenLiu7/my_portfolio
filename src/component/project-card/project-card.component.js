@@ -1,22 +1,38 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './project-card.styles.scss';
 
-export default function ProjectCard({ imageUrl, title }) {
-  return (
-    <div className='project-card__container'>
-      <div className='hovereffect'>
+class ProjectCard extends Component {
+  render() {
+    const { title, imageUrl } = this.props;
+
+    return (
+      <div className='project-card'>
         <img
-          className='img-responsive'
           src={require('../../' + imageUrl)}
-          alt=''
+          alt='img'
+          className='project-card__image'
         />
-        <div className='overlay'>
-          <h2>{title}</h2>
-          <p>
-            <a href='#'>LINK HERE</a>
+        <div className='project-card__body'>
+          <h2 className='project-card__title'>{title}</h2>
+          <p className='project-card__content'>
+            This is an autherization system build by React, Redux-Saga, MongoDB
+            and PassportJS{' '}
           </p>
         </div>
+        <div className='project-card__button-group'>
+          <a href='#popup' className='project-card__button'>
+            Detail
+          </a>
+          <a href='#popup' className='project-card__button'>
+            GitHub
+          </a>
+          <a href='#popup' className='project-card__button'>
+            Live Demo
+          </a>
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
+
+export default ProjectCard;
