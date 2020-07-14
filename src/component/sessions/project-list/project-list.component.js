@@ -53,7 +53,7 @@ export default class ProjectList extends Component {
       <div className='project-session'>
         <div className='project-list'>
           <Fade left delay={200}>
-            <h1 className='project-list__title'>Projects</h1>
+            <h1 className='project-list__title'>PROJECTS</h1>
           </Fade>
           <Fade right>
             <div className='project-list__title-bar'></div>

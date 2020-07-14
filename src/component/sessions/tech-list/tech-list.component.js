@@ -13,7 +13,8 @@ export default function TechList() {
       title: 'Frontend',
       tech: [
         'HTML',
-        'CSS, SASS',
+        'CSS',
+        'SASS',
         'Javascript',
         'React',
         'Redux Thunk',
@@ -30,7 +31,8 @@ export default function TechList() {
         'nodejs',
         'Express',
         'PassportJs',
-        'Mongodb, Mongoose',
+        'Mongodb',
+        ' Mongoose',
         'Graphql',
         'Firebase',
         'Contentful',
@@ -58,33 +60,34 @@ export default function TechList() {
     <div className='tech-list__session'>
       <div className='tech-list__title'>
         <Fade left delay={200}>
-          <h1 className='tech-list__title-text'>Technology</h1>
+          <h1 className='tech-list__title-text'>TECHNOLOGY</h1>
         </Fade>
         <Fade right>
           <div className='tech-list__title-bar'></div>
         </Fade>
       </div>
-
-      <div className='tech-list__container'>
-        <div className='tech-list__card'>
-          <div className='tech-list__card-icon'>
-            <IconFrontend />
+      <Fade delay={500}>
+        <div className='tech-list__container'>
+          <div className='tech-list__card'>
+            <div className='tech-list__card-icon'>
+              <IconFrontend />
+            </div>
+            <TechCard content={techData.frontend} />
           </div>
-          <TechCard content={techData.frontend} />
-        </div>
-        <div className='tech-list__card'>
-          <div className='tech-list__card-icon'>
-            <IconBackend />
+          <div className='tech-list__card'>
+            <div className='tech-list__card-icon'>
+              <IconBackend />
+            </div>
+            <TechCard content={techData.backend} />
           </div>
-          <TechCard content={techData.backend} />
-        </div>
-        <div className='tech-list__card'>
-          <div className='tech-list__card-icon'>
-            <IconOthers />
+          <div className='tech-list__card'>
+            <div className='tech-list__card-icon'>
+              <IconOthers />
+            </div>
+            <TechCard content={techData.others} />
           </div>
-          <TechCard content={techData.others} />
         </div>
-      </div>
+      </Fade>
     </div>
   );
 }

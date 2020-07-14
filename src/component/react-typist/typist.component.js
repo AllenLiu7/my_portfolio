@@ -8,18 +8,13 @@ export default function MyTypist() {
     <>
       <Typist
         className='MyTypist'
-        startDelay={1500}
+        startDelay={500}
         cursor={{ show: true, hideWhenDone: true }}
       >
-        <span className='first'>
-          Hi, I am Allen Liu.{' '}
-          <span role='img' aria-label='cheers'>
-            🥳
-          </span>
-        </span>
+        <span className='first'>Hi, I am Allen Liu. </span>
       </Typist>
       <div className='fade-content'>
-        <Fade delay={4200}>
+        <Fade delay={2800}>
           <br />
           <span>I am a self-taught full stack web developer.</span>
         </Fade>

@@ -5,8 +5,15 @@ import './landing.styles.scss';
 export default function Landing() {
   return (
     <div className='landing-session'>
-      <div className='typist'>
+      <div className='landing__typist'>
         <MyTypist />
+      </div>
+      <div className='landing__image-container'>
+        <img
+          src={require('../../../assets/images/dogs-5021084_1280.jpg')}
+          alt='pic'
+        />
+        <div className='landing__overlay'></div>
       </div>
     </div>
   );

@@ -65,7 +65,7 @@ $transition: 0.2s;
     &:link,
     &:visited {
       text-decoration: none;
-      font-size: 1.8rem;
+      font-size: 1.9rem;
       font-weight: 600;
       display: inline-block;
       margin-right: 40px;
@@ -83,4 +83,21 @@ $transition: 0.2s;
       transform: translateX(1rem);
     }
   }
+
+  &__modal {
+    padding: 4rem;
+    &-title {
+      font-size: 4rem;
+      margin-bottom: 4rem;
+    }
+    &-content {
+      font-size: 2rem;
+    }
+  }
+}
+
+.customModal {
+  max-width: 800px;
+  width: 100%;
+  height: auto;
 }
