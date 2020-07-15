@@ -9,36 +9,61 @@ export default class ProjectList extends Component {
       {
         title: 'React Passport Authorization system',
         imageUrl: 'assets/images/react-passport.png',
+        github:
+          'https://github.com/AllenLiu7/React-Passport-Authentication-Heroku',
+        liveDemo: 'https://lit-dawn-27957.herokuapp.com/',
         id: 1,
         tag: ['react'],
       },
       {
         title: 'Online Cloth Shop',
         imageUrl: 'assets/images/cloth-shop.png',
+        github: 'https://github.com/AllenLiu7/A-cloth-online-shop',
+        liveDemo: 'https://cloth-ecommerce-allenliu.netlify.app/',
         id: 2,
         tag: ['react', 'nodejs'],
       },
       {
         title: 'Book Manager',
         imageUrl: 'assets/images/book-manager.png',
+        github:
+          'https://github.com/AllenLiu7/Library-Manager-TechDegree-Project-10',
+        liveDemo: '',
         id: 3,
         tag: [''],
       },
       {
         title: 'Online Coffee Shop',
         imageUrl: 'assets/images/coffee-shop.png',
+        github: 'https://github.com/AllenLiu7/ecommerce__coffeeshop--gatsby',
+        liveDemo: 'https://coffee-shop-allenliu.netlify.app/',
+        id: 4,
+        tag: ['react'],
+      },
+      {
+        title: 'React Flickr Gallery',
+        imageUrl: 'assets/images/react-gallery.jpg',
+        github:
+          'https://github.com/AllenLiu7/Image-Gallery-TechDegree-Project-9',
+        liveDemo: 'https://react-gallery-allenliu.netlify.app/',
         id: 4,
         tag: ['react'],
       },
       {
         title: 'Travel Agent Website',
         imageUrl: 'assets/images/travel-agent.png',
+        github:
+          'https://github.com/AllenLiu7/travel_agent_website--css_practice',
+        liveDemo: 'https://travel-agent-allenliu.netlify.app/',
         id: 5,
         tag: ['react', 'nodejs'],
       },
       {
         title: 'Course Rating API',
         imageUrl: 'assets/images/course-rating-api.png',
+        github:
+          'https://github.com/AllenLiu7/Course-rating-API-TechDegree-Project-11',
+        liveDemo: '',
         id: 6,
         tag: ['react', 'jquerry'],
       },

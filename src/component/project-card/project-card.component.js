@@ -18,7 +18,7 @@ class ProjectCard extends Component {
   };
 
   render() {
-    const { title, imageUrl } = this.props;
+    const { title, imageUrl, github, liveDemo } = this.props;
     const { open } = this.state;
 
     return (
@@ -64,12 +64,23 @@ class ProjectCard extends Component {
                 </div>
               </Modal>
               <a
-                href='https://github.com/AllenLiu7/my_portfolio'
+                href={github}
+                target='_blank'
+                rel='noopener noreferrer'
                 className='project-card__button'
               >
                 GitHub
               </a>
-              <button className='project-card__button'>Live Demo</button>
+              {liveDemo ? (
+                <a
+                  href={liveDemo}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='project-card__button'
+                >
+                  Live Demo
+                </a>
+              ) : null}
             </div>
           </div>
         </Fade>
