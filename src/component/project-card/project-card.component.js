@@ -38,9 +38,12 @@ class ProjectCard extends Component {
               </p>
             </div>
             <div className='project-card__button-group'>
-              <a className='project-card__button' onClick={this.onOpenModal}>
+              <button
+                className='project-card__button'
+                onClick={this.onOpenModal}
+              >
                 Detail
-              </a>
+              </button>
               <Modal
                 open={open}
                 onClose={this.onCloseModal}
@@ -60,8 +63,13 @@ class ProjectCard extends Component {
                   </p>
                 </div>
               </Modal>
-              <a className='project-card__button'>GitHub</a>
-              <a className='project-card__button'>Live Demo</a>
+              <a
+                href='https://github.com/AllenLiu7/my_portfolio'
+                className='project-card__button'
+              >
+                GitHub
+              </a>
+              <button className='project-card__button'>Live Demo</button>
             </div>
           </div>
         </Fade>
