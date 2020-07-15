@@ -61,9 +61,7 @@ export default class ProjectList extends Component {
 
           <div className='project-list__card-container'>
             {projects.map(({ id, ...otherProjectProps }) => (
-              <Fade delay={300}>
-                <ProjectCard key={id} {...otherProjectProps} />
-              </Fade>
+              <ProjectCard key={id} {...otherProjectProps} />
             ))}
           </div>
         </div>

@@ -44,11 +44,11 @@ $color-white: #fff;
   }
 
   &--orange {
-    background-color: $color-primary-light;
+    background: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
     color: $color-white;
 
     &::after {
-      background-color: $color-primary-light;
+      background: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
     }
   }
 

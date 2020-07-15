@@ -64,7 +64,7 @@ export default class Form extends Component {
               <textarea
                 type='text'
                 className='form__message'
-                row='8'
+                rows='10'
                 name='text'
                 value={this.state.text}
                 onChange={this.handleChange}

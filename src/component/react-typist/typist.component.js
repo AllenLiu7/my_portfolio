@@ -14,7 +14,7 @@ export default function MyTypist() {
         <span className='first'>Hi, I am Allen Liu. </span>
       </Typist>
       <div className='fade-content'>
-        <Fade delay={2800}>
+        <Fade delay={2200}>
           <br />
           <span>I am a self-taught full stack web developer.</span>
         </Fade>

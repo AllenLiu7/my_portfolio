@@ -7,8 +7,12 @@ export default function TechCard({ content: { title, tech } }) {
       <div className='tech-card__icon'></div>
       <h1 className='tech-card__title hvr-buzz-out'>{title}</h1>
       <div className='tech-card__content'>
-        {tech.map((tech) => {
-          return <p className=' hvr-bounce-to-right'>{tech}</p>;
+        {tech.map((tech, index) => {
+          return (
+            <p key={index} className=' hvr-bounce-to-right'>
+              {tech}
+            </p>
+          );
         })}
       </div>
     </div>
