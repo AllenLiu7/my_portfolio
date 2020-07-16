@@ -1,8 +1,7 @@
 .project-session {
-  padding: 100px 0 150px 0;
-
+  margin-top: 500px;
   @media screen and (max-width: 500px) {
-    padding: 0px 0;
+    margin-top: 180px;
   }
 }
 
@@ -15,7 +14,7 @@
     font-weight: 600;
 
     @media screen and (max-width: 500px) {
-      font-size: 3.5rem;
+      font-size: 3rem;
     }
 
     &-bar {
@@ -35,14 +34,15 @@
   &__card-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
-    grid-gap: 50px;
+    grid-gap: 80px;
 
     margin: 120px 300px 0px 300px;
     justify-content: center;
+    justify-items: center;
 
     @media screen and (max-width: 500px) {
-      margin: 50px 50px;
-      grid-gap: 30px;
+      margin: 100px 0 0 0;
+      grid-gap: 50px;
     }
   }
 }

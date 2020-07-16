@@ -10,9 +10,19 @@ $transition: 0.2s;
   transition: $transition;
   position: relative;
 
+  @media screen and (max-width: 500px) {
+    height: 350px;
+    width: 250px;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  }
+
   &:hover {
-    transform: translateY(-0.5%);
+    transform: translateY(-1rem);
     box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.2);
+
+    @media screen and (max-width: 500px) {
+      transform: none;
+    }
   }
 
   &__image {
@@ -21,18 +31,35 @@ $transition: 0.2s;
     height: 25rem;
     object-fit: contain;
     background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+
+    @media screen and (max-width: 500px) {
+      height: 16rem;
+    }
   }
 
   &__body {
     padding: 40px;
+
+    @media screen and (max-width: 500px) {
+      padding: 20px;
+    }
   }
 
   &__title {
     font-size: 2.5rem;
     margin-bottom: 25px;
+
+    @media screen and (max-width: 500px) {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
   }
   &__content {
     font-size: 1.5rem;
+
+    @media screen and (max-width: 500px) {
+      font-size: 1rem;
+    }
   }
 
   &__button-group {
@@ -41,6 +68,10 @@ $transition: 0.2s;
     bottom: 30px;
     left: 40px;
     justify-content: flex-start;
+
+    @media screen and (max-width: 500px) {
+      left: 23px;
+    }
   }
 
   &__button {
@@ -60,10 +91,19 @@ $transition: 0.2s;
       background-clip: text;
       -webkit-text-fill-color: transparent;
       -moz-text-fill-color: transparent;
+
+      @media screen and (max-width: 500px) {
+        font-size: 1.2rem;
+        margin-right: 20px;
+      }
     }
 
     &:hover {
       transform: translateX(1rem);
+
+      @media screen and (max-width: 500px) {
+        transform: none;
+      }
     }
   }
 

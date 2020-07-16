@@ -3,7 +3,7 @@ import Button from '../button/button.component';
 
 import Fade from 'react-reveal/Fade';
 import './form.styles.scss';
-import MyPhoto from '../../assets/images/IMG_20181229_104653.jpg';
+import MyPhoto from '../../assets/images/my-photo.jpg';
 
 export default class Form extends Component {
   state = {

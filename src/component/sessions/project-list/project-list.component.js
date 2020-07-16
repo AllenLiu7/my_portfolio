@@ -24,6 +24,14 @@ export default class ProjectList extends Component {
         tag: ['react', 'nodejs'],
       },
       {
+        title: 'My Portfolio Site',
+        imageUrl: 'assets/images/portfolio.jpg',
+        github: 'https://github.com/AllenLiu7/my_portfolio',
+        liveDemo: 'https://my-portfolio-allenliu.netlify.app/',
+        id: 2,
+        tag: ['react', 'nodejs'],
+      },
+      {
         title: 'Book Manager',
         imageUrl: 'assets/images/book-manager.png',
         github:
@@ -67,6 +75,15 @@ export default class ProjectList extends Component {
         id: 6,
         tag: ['react', 'jquerry'],
       },
+      {
+        title: 'Tic Tac Toe',
+        imageUrl: 'assets/images/tictactoe.jpg',
+        github: 'https://github.com/AllenLiu7/Tic-Tac-Toe-TechDegree-Project-4',
+        liveDemo:
+          'https://allenliu7.github.io/Tic-Tac-Toe-TechDegree-Project-4/',
+        id: 6,
+        tag: ['react', 'jquerry'],
+      },
     ],
     filteredProjects: [],
   };
@@ -83,12 +100,13 @@ export default class ProjectList extends Component {
           <Fade right>
             <div className='project-list__title-bar'></div>
           </Fade>
-
-          <div className='project-list__card-container'>
-            {projects.map(({ id, ...otherProjectProps }) => (
-              <ProjectCard key={id} {...otherProjectProps} />
-            ))}
-          </div>
+          <Fade>
+            <div className='project-list__card-container'>
+              {projects.map(({ id, ...otherProjectProps }) => (
+                <ProjectCard key={id} {...otherProjectProps} />
+              ))}
+            </div>
+          </Fade>
         </div>
       </div>
     );

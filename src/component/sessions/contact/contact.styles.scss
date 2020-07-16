@@ -1,8 +1,11 @@
 .contact-session {
+  margin-top: 500px;
+  margin-bottom: 200px;
   display: flex;
-
   align-items: center;
   justify-content: center;
-  //background-color: cornsilk;
-  padding: 300px 0 300px 0;
+
+  @media screen and (max-width: 500px) {
+    margin-top: 200px;
+  }
 }
