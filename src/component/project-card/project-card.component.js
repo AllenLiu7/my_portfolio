@@ -18,7 +18,7 @@ class ProjectCard extends Component {
   };
 
   render() {
-    const { title, imageUrl, github, liveDemo } = this.props;
+    const { title, imageUrl, github, liveDemo, description, tech } = this.props;
     const { open } = this.state;
 
     return (
@@ -31,15 +31,12 @@ class ProjectCard extends Component {
           />
           <div className='project-card__body'>
             <h2 className='project-card__title'>{title}</h2>
-            <p className='project-card__content'>
-              This is an autherization system build by React, Redux-Saga,
-              MongoDB and PassportJS{' '}
-            </p>
+            <p className='project-card__content'>{tech}</p>
           </div>
           <div className='project-card__button-group'>
-            <button className='project-card__button' onClick={this.onOpenModal}>
+            <span className='project-card__button' onClick={this.onOpenModal}>
               Detail
-            </button>
+            </span>
             <Modal
               open={open}
               onClose={this.onCloseModal}
@@ -50,13 +47,11 @@ class ProjectCard extends Component {
               }}
             >
               <div className='project-card__modal'>
-                <h2 className='project-card__modal-title'>
-                  React Passport Authorization system
-                </h2>
-                <p className='project-card__modal-content'>
-                  This is an autherization system build by React, Redux-Saga,
-                  MongoDB and PassportJS
-                </p>
+                <div className='project-card__modal-image'></div>
+                <div className='project-card__modal-body'>
+                  <h2 className='project-card__modal-title'>{title}</h2>
+                  <p className='project-card__modal-content'>{description}</p>
+                </div>
               </div>
             </Modal>
             <a

@@ -55,7 +55,7 @@ $transition: 0.2s;
     }
   }
   &__content {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 
     @media screen and (max-width: 500px) {
       font-size: 1rem;
@@ -78,9 +78,10 @@ $transition: 0.2s;
     &,
     &:link,
     &:visited {
+      font-family: sans-serif;
       text-decoration: none;
       font-size: 1.9rem;
-      font-weight: 600;
+      font-weight: 500;
       display: inline-block;
       margin-right: 40px;
       transition: all 0.2s;
@@ -108,19 +109,32 @@ $transition: 0.2s;
   }
 
   &__modal {
-    padding: 4rem;
+    display: flex;
+    flex-direction: row;
+
+    &-image {
+      height: auto;
+      width: 120px;
+      background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+    }
+
+    &-body {
+      margin: 60px;
+    }
+
     &-title {
-      font-size: 4rem;
+      font-size: 2.5rem;
       margin-bottom: 4rem;
     }
+
     &-content {
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
   }
 }
 
 .customModal {
-  max-width: 800px;
-  width: 100%;
+  //max-width: 800px;
+  width: 800px;
   height: auto;
 }
