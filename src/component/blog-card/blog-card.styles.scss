@@ -1,0 +1,62 @@
+.blog-card {
+  background-color: #fff;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  width: 340px;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  margin: 20px;
+
+  transition: all 0.2s;
+  position: relative;
+
+  @media screen and (max-width: 500px) {
+    height: 350px;
+    width: 250px;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  }
+
+  &:hover {
+    transform: translateY(-1rem);
+    cursor: pointer;
+    box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.2);
+
+    @media screen and (max-width: 500px) {
+      transform: none;
+    }
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    object-fit: contain;
+
+    @media screen and (max-width: 500px) {
+      height: 16rem;
+    }
+  }
+
+  &__body {
+    padding: 25px;
+
+    @media screen and (max-width: 500px) {
+      padding: 20px;
+    }
+  }
+
+  &__title {
+    font-size: 2rem;
+    margin-bottom: 25px;
+
+    @media screen and (max-width: 500px) {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+  }
+  &__content {
+    font-size: 1.5rem;
+
+    @media screen and (max-width: 500px) {
+      font-size: 1.2rem;
+    }
+  }
+}

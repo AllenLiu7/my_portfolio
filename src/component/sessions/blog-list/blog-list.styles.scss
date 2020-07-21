@@ -1,0 +1,40 @@
+.blog-session {
+  margin-top: 500px;
+  @media screen and (max-width: 500px) {
+    margin-top: 180px;
+  }
+}
+
+.blog-list {
+  height: auto;
+
+  &__title {
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 600;
+
+    @media screen and (max-width: 500px) {
+      font-size: 2.8rem;
+    }
+
+    &-bar {
+      background: black;
+      height: 4px;
+      width: 100px;
+      margin: 30px auto 0 auto;
+
+      @media screen and (max-width: 500px) {
+        margin: 15px auto 0 auto;
+        height: 2.5px;
+        width: 70px;
+      }
+    }
+  }
+
+  &__card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10rem;
+  }
+}
