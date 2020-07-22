@@ -4,8 +4,8 @@ import Fade from 'react-reveal/Fade';
 import './project-list.styles.scss';
 
 export default class ProjectList extends Component {
-  state = {
-    projects: [
+  render() {
+    const projects = [
       {
         title: 'Passport Login System',
         description:
@@ -36,7 +36,7 @@ export default class ProjectList extends Component {
         imageUrl: 'assets/images/portfolio.jpg',
         github: 'https://github.com/AllenLiu7/my_portfolio',
         liveDemo: 'https://my-portfolio-allenliu.netlify.app/',
-        id: 2,
+        id: 3,
         tech: 'React, Sass, Netlify',
       },
       {
@@ -47,7 +47,7 @@ export default class ProjectList extends Component {
         github:
           'https://github.com/AllenLiu7/Library-Manager-TechDegree-Project-10',
         liveDemo: '',
-        id: 3,
+        id: 4,
         tech: 'Javascript, Node.js, Express, Pug, Sequaelize',
       },
       {
@@ -58,7 +58,7 @@ export default class ProjectList extends Component {
         github:
           'https://github.com/AllenLiu7/Course-rating-API-TechDegree-Project-11',
         liveDemo: '',
-        id: 6,
+        id: 5,
         tech: 'MongoDB, Mongoose, Express and Node.js',
       },
       {
@@ -69,7 +69,7 @@ export default class ProjectList extends Component {
         github:
           'https://github.com/AllenLiu7/Image-Gallery-TechDegree-Project-9',
         liveDemo: 'https://react-gallery-allenliu.netlify.app/',
-        id: 4,
+        id: 6,
         tech: 'React, Netlify',
       },
       {
@@ -80,7 +80,7 @@ export default class ProjectList extends Component {
         github:
           'https://github.com/AllenLiu7/travel_agent_website--css_practice',
         liveDemo: 'https://travel-agent-allenliu.netlify.app/',
-        id: 5,
+        id: 7,
         tech: 'HTML, Sass, Netlify',
       },
       {
@@ -90,7 +90,7 @@ export default class ProjectList extends Component {
         imageUrl: 'assets/images/coffee-shop.png',
         github: 'https://github.com/AllenLiu7/ecommerce__coffeeshop--gatsby',
         liveDemo: 'https://coffee-shop-allenliu.netlify.app/',
-        id: 4,
+        id: 8,
         tech: 'React, GatsbyJS, Contentful, Netlify',
       },
       {
@@ -101,16 +101,10 @@ export default class ProjectList extends Component {
         github: 'https://github.com/AllenLiu7/Tic-Tac-Toe-TechDegree-Project-4',
         liveDemo:
           'https://allenliu7.github.io/Tic-Tac-Toe-TechDegree-Project-4/',
-        id: 6,
+        id: 9,
         tech: 'Javascript, jQuery, CSS, Netlify',
       },
-    ],
-    filteredProjects: [],
-  };
-
-  render() {
-    const projects = this.state.projects;
-
+    ];
     return (
       <div className='project-session'>
         <div className='project-list'>
@@ -120,13 +114,16 @@ export default class ProjectList extends Component {
           <Fade right>
             <div className='project-list__title-bar'></div>
           </Fade>
-          <Fade>
-            <div className='project-list__card-container'>
-              {projects.map(({ id, ...otherProjectProps }) => (
-                <ProjectCard key={id} {...otherProjectProps} />
-              ))}
-            </div>
-          </Fade>
+
+          <div className='project-list__card-container'>
+            {projects.map(({ id, ...otherProjectProps }) => (
+              <div key={id}>
+                <Fade>
+                  <ProjectCard {...otherProjectProps} />
+                </Fade>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     );

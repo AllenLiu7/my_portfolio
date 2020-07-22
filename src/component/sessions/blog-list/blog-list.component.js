@@ -4,8 +4,8 @@ import Fade from 'react-reveal/Fade';
 import './blog-list.styles.scss';
 
 export default class BlogList extends Component {
-  state = {
-    blogs: [
+  render() {
+    const blogs = [
       {
         title:
           'How to set up ReactJS, Redux-Saga and Passport.js in an authentication app with OAuth and local strategy Part 1',
@@ -36,11 +36,7 @@ export default class BlogList extends Component {
         description:
           'This is the Part 3 of my authentication app series. In Part 2 we have talked about how to setup Redux, Redux, Redux-saga, forms that users…',
       },
-    ],
-  };
-
-  render() {
-    const blogs = this.state.blogs;
+    ];
 
     return (
       <div className='blog-session'>
