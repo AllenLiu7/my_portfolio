@@ -28,6 +28,13 @@
     font-size: 2.5rem;
     margin-left: 30px;
   }
+
+  @media only screen and (max-width: 1440px) and (min-width: 1200px) {
+    top: 400px;
+    font-size: 5rem;
+    font-weight: 700;
+    margin-left: 100px;
+  }
 }
 
 .fade-content {
@@ -41,5 +48,11 @@
     font-size: 2rem;
     margin-left: 30px;
     top: 450px;
+  }
+
+  @media only screen and (max-width: 1440px) and (min-width: 1200px) {
+    top: 430px;
+    font-size: 4rem;
+    margin-left: 100px;
   }
 }

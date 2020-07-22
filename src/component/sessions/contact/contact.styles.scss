@@ -8,4 +8,8 @@
   @media screen and (max-width: 500px) {
     margin-top: 200px;
   }
+
+  @media only screen and (max-width: 1440px) and (min-width: 1200px) {
+    margin-top: 300px;
+  }
 }

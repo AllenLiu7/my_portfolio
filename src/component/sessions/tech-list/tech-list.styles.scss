@@ -4,6 +4,9 @@
     @media screen and (max-width: 500px) {
       margin-top: 160px;
     }
+    @media only screen and (max-width: 1440px) and (min-width: 1200px) {
+      margin-top: 300px;
+    }
   }
 
   &__title {
@@ -19,6 +22,9 @@
       @media screen and (max-width: 500px) {
         font-size: 2.8rem;
       }
+      @media only screen and (max-width: 1440px) and (min-width: 1200px) {
+        font-size: 4rem;
+      }
     }
 
     &-bar {
@@ -31,6 +37,9 @@
         margin: 15px auto 0 auto;
         height: 2.5px;
         width: 70px;
+      }
+      @media only screen and (max-width: 1440px) and (min-width: 1200px) {
+        font-size: 4rem;
       }
     }
   }

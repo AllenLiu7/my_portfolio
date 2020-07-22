@@ -3,6 +3,9 @@
   @media screen and (max-width: 500px) {
     margin-top: 180px;
   }
+  @media only screen and (max-width: 1440px) and (min-width: 1200px) {
+    margin-top: 300px;
+  }
 }
 
 .project-list {
@@ -15,6 +18,10 @@
 
     @media screen and (max-width: 500px) {
       font-size: 2.8rem;
+    }
+
+    @media only screen and (max-width: 1440px) and (min-width: 1200px) {
+      font-size: 4rem;
     }
 
     &-bar {
@@ -33,15 +40,26 @@
 
   &__card-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 350px));
     grid-gap: 80px;
 
     margin: 120px 300px 0px 300px;
     justify-content: center;
     justify-items: center;
-
     @media screen and (max-width: 500px) {
       margin: 100px 0 0 0;
+      grid-gap: 50px;
+    }
+
+    @media only screen and (max-width: 1440px) and (min-width: 1200px) {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 350px));
+      margin: 180px 0 0 0;
+      grid-gap: 50px;
+    }
+
+    @media only screen and (max-width: 1800px) and (min-width: 1440px) {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+      margin: 200px 0 0 0;
       grid-gap: 50px;
     }
   }
