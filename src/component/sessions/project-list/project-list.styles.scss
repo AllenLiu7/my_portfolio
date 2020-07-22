@@ -52,14 +52,14 @@
     }
 
     @media only screen and (max-width: 1440px) and (min-width: 1200px) {
-      grid-template-columns: repeat(auto-fit, minmax(300px, 350px));
-      margin: 180px 0 0 0;
+      grid-template-columns: repeat(auto-fit, 300px);
+      margin: 180px 100px 0 100px;
       grid-gap: 50px;
     }
 
     @media only screen and (max-width: 1800px) and (min-width: 1440px) {
-      grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
-      margin: 200px 0 0 0;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 350px));
+      margin: 200px 100px 0 100px;
       grid-gap: 50px;
     }
   }
