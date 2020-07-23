@@ -13,7 +13,7 @@
   }
 
   &__image {
-    width: 400px;
+    width: 380px;
     margin-right: 50px;
 
     @media screen and (max-width: 500px) {
@@ -27,13 +27,6 @@
     img {
       width: 100%;
       object-fit: cover;
-
-      // @media screen and (max-width: 500px) {
-      //   width: 250px;
-      // }
-      // @media only screen and (max-width: 1440px) and (min-width: 1200px) {
-      //   height: auto;
-      // }
     }
   }
 
@@ -60,7 +53,7 @@
         font-size: 2rem;
       }
       @media only screen and (max-width: 1440px) and (min-width: 1200px) {
-        font-size: 2rem;
+        font-size: 2.5rem;
       }
     }
 
@@ -84,6 +77,9 @@
       @media screen and (max-width: 500px) {
         font-size: 1.5rem;
         margin: 25px 0;
+      }
+      @media only screen and (max-width: 1440px) and (min-width: 1200px) {
+        margin: 28px 0;
       }
 
       &:focus {

@@ -7,32 +7,25 @@ $color-white: #fff;
   &:link,
   &:visited {
     text-transform: uppercase;
-    /*here <a> is treated as TEXT*/
+
     text-decoration: none;
     display: inline-block;
     padding: 1rem 6rem;
-    border-radius: 10rem;
+    border-radius: 4rem;
     transition: all 0.2s;
-    /*spesify all animation happened at this element*/
     position: relative;
-
-    //change for the button element
     border: none;
     cursor: pointer;
   }
 
   &--animated {
     animation: moveInBottom 0.7s 0.7s;
-    /*delay 0.7s to perform animation and the duration is 0.7s*/
     animation-fill-mode: backwards;
-    /*set the state to 0% of the animation which is 0 opacity, very tricky!*/
   }
 
   &:hover {
     transform: translateY(-0.3rem);
-    /*minus means goes up*/
     box-shadow: 0 1rem 3rem rgba(7, 7, 7, 0.384);
-    /* horizontal, vertical, blur, color*/
   }
 
   &:active,

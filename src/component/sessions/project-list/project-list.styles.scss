@@ -17,11 +17,11 @@
     font-weight: 600;
 
     @media screen and (max-width: 500px) {
-      font-size: 2.8rem;
+      font-size: 2.3rem;
     }
 
     @media only screen and (max-width: 1440px) and (min-width: 1200px) {
-      font-size: 4rem;
+      font-size: 3.5rem;
     }
 
     &-bar {
@@ -43,7 +43,7 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 350px));
     grid-gap: 80px;
 
-    margin: 120px 300px 0px 300px;
+    margin: 180px 300px 0px 300px;
     justify-content: center;
     justify-items: center;
     @media screen and (max-width: 500px) {
@@ -53,13 +53,13 @@
 
     @media only screen and (max-width: 1440px) and (min-width: 1200px) {
       grid-template-columns: repeat(auto-fit, 300px);
-      margin: 180px 100px 0 100px;
+      margin: 120px 100px 0 100px;
       grid-gap: 50px;
     }
 
     @media only screen and (max-width: 1800px) and (min-width: 1440px) {
       grid-template-columns: repeat(auto-fit, minmax(300px, 350px));
-      margin: 200px 100px 0 100px;
+      margin: 180px 100px 0 100px;
       grid-gap: 50px;
     }
   }

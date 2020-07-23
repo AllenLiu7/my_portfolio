@@ -59,15 +59,19 @@ $transition: 0.2s;
 
   &__title {
     font-size: 2.5rem;
+    font-weight: 600;
     margin-bottom: 25px;
 
     @media screen and (max-width: 500px) {
-      font-size: 2rem;
+      font-size: 1.8rem;
       margin-bottom: 20px;
+    }
+    @media only screen and (max-width: 1440px) and (min-width: 1200px) {
+      font-size: 1.8rem;
     }
   }
   &__content {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 
     @media screen and (max-width: 500px) {
       font-size: 1.2rem;
@@ -99,7 +103,7 @@ $transition: 0.2s;
     &:visited {
       font-family: sans-serif;
       text-decoration: none;
-      font-size: 1.9rem;
+      font-size: 1.8rem;
       font-weight: 500;
       display: inline-block;
       margin-right: 40px;

@@ -36,15 +36,18 @@
   }
 
   &__body {
-    padding: 25px;
+    padding: 30px;
 
     @media screen and (max-width: 500px) {
       padding: 20px;
     }
+    @media only screen and (max-width: 1440px) and (min-width: 1200px) {
+      padding: 18px;
+    }
   }
 
   &__title {
-    font-size: 2rem;
+    font-size: 1.7rem;
     margin-bottom: 25px;
 
     @media screen and (max-width: 500px) {
@@ -52,7 +55,7 @@
       margin-bottom: 20px;
     }
     @media only screen and (max-width: 1440px) and (min-width: 1200px) {
-      font-size: 14px;
+      font-size: 1.3rem;
       margin-bottom: 20px;
     }
   }
