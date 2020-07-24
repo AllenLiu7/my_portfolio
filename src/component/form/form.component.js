@@ -47,7 +47,7 @@ export default class Form extends Component {
                   this.state.name.length ? 'shrink' : ''
                 } form__label`}
               >
-                name
+                Name
               </label>
             </div>
             <div className='form__group'>
@@ -63,7 +63,7 @@ export default class Form extends Component {
                   this.state.email.length ? 'shrink' : ''
                 } form__label`}
               >
-                email
+                Email
               </label>
             </div>
             <div className='form__group'>
@@ -80,7 +80,7 @@ export default class Form extends Component {
                   this.state.message.length ? 'shrink-text' : ''
                 } form__label`}
               >
-                message
+                Message
               </label>
             </div>
             <div className='button'>

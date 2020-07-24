@@ -168,14 +168,13 @@ $transition: 0.2s;
       text-align: justify;
 
       @media screen and (max-width: 500px) {
-        font-size: 1rem;
+        font-size: 1.4rem;
       }
     }
   }
 }
 
 .customModal {
-  //max-width: 800px;
   width: 800px;
   height: auto;
 }

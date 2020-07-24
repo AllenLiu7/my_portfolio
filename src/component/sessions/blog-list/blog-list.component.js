@@ -8,7 +8,7 @@ export default class BlogList extends Component {
     const blogs = [
       {
         title:
-          'How to set up ReactJS, Redux-Saga and Passport.js in an authentication app with OAuth and local strategy Part 1',
+          'Authentication using ReactJS, Redux-Saga, Passport.js and MongoDB Part 1',
         id: '1',
         imageUrl: 'assets/images/part1.jpg',
         link:
@@ -18,7 +18,7 @@ export default class BlogList extends Component {
       },
       {
         title:
-          'How to set up ReactJS, Redux-Saga and Passport.js in an authentication app with OAuth and local strategy Part 2',
+          'Authentication using ReactJS, Redux-Saga, Passport.js and MongoDB Part 2',
         id: '2',
         imageUrl: 'assets/images/part2.jpg',
         link:
@@ -28,7 +28,7 @@ export default class BlogList extends Component {
       },
       {
         title:
-          'How to set up ReactJS, Redux-Saga and Passport.js in an authentication   app with OAuth and local strategy Part 3',
+          'Authentication using ReactJS, Redux-Saga, Passport.js and MongoDB Part 3',
         id: '3',
         imageUrl: 'assets/images/part3.jpg',
         link:
