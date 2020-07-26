@@ -21,7 +21,7 @@ export default class ProjectList extends Component {
       {
         title: 'Online Cloth Shop',
         description:
-          'This website is an online shop with full functionality. It is a course project taught by Mr YiHua Zhang on Udemy. The frontend of this website is built using React and Redux-Saga. User data and product data are stored at Firebase and login system is built upon Firebase. A server is established for the integration with Stripe.',
+          'This website is an online shop. It is a project based course taught by Mr YiHua Zhang on Udemy. The frontend of this website is built with React and Redux-Saga. User data and product data are stored at Firebase and authentication system is built upon Firebase. A connnected Stripe button conponent is used in the check out page for the mock payment.',
         imageUrl: 'assets/images/cloth-shop.png',
         github: 'https://github.com/AllenLiu7/A-cloth-online-shop',
         liveDemo: 'https://cloth-ecommerce-allenliu.netlify.app/',
