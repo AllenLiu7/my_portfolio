@@ -106,7 +106,7 @@ export default class ProjectList extends Component {
       },
     ];
     return (
-      <div className='project-session'>
+      <div className='project-session' name='projects' id='projects'>
         <div className='project-list'>
           <Fade left delay={200}>
             <h1 className='project-list__title'>PROJECTS</h1>

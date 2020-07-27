@@ -4,7 +4,7 @@ import './landing.styles.scss';
 
 export default function Landing() {
   return (
-    <div className='landing-session'>
+    <div className='landing-session' name='home' id='home'>
       <div className='landing__typist'>
         <MyTypist />
       </div>

@@ -39,7 +39,7 @@ export default class BlogList extends Component {
     ];
 
     return (
-      <div className='blog-session'>
+      <div className='blog-session' name='blog' id='blog'>
         <div className='blog-list'>
           <Fade left delay={200}>
             <h1 className='blog-list__title'>BLOGS</h1>

@@ -57,7 +57,7 @@ export default function TechList() {
     },
   };
   return (
-    <div className='tech-list__session'>
+    <div className='tech-list__session' name='technology' id='technology'>
       <div className='tech-list__title'>
         <Fade left delay={200}>
           <h1 className='tech-list__title-text'>TECHNOLOGY</h1>

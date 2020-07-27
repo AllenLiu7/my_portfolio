@@ -5,7 +5,7 @@ import './contact.styles.scss';
 
 export default function Contact() {
   return (
-    <div className='contact-session'>
+    <div className='contact-session' id='contact'>
       <Form />
     </div>
   );
