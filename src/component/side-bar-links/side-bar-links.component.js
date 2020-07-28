@@ -5,26 +5,21 @@ const SideLink = (props) => {
   const links = [
     {
       id: 1,
-      text: 'home',
-      url: 'home',
-    },
-    {
-      id: 2,
       text: 'technology',
       url: 'technology',
     },
     {
-      id: 3,
+      id: 2,
       text: 'projects',
       url: 'projects',
     },
     {
-      id: 4,
+      id: 3,
       text: 'blog',
       url: 'blog',
     },
     {
-      id: 5,
+      id: 4,
       text: 'contact',
       url: 'contact',
     },

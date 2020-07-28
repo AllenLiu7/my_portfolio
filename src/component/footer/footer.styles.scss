@@ -4,6 +4,9 @@
   text-align: center;
   display: grid;
   place-items: center;
+  @media screen and (max-width: 500px) {
+    height: 6rem;
+  }
 }
 .footer h4 {
   margin-top: 0.5rem;
@@ -11,16 +14,18 @@
   color: white;
   font-weight: normal;
   text-transform: uppercase;
+
+  @media screen and (max-width: 500px) {
+    font-size: 1rem;
+  }
 }
-.footer h4 span {
-  color: #2caeba;
-}
+
 .footer-links {
   margin: 0 auto 1rem auto;
 }
-.footer .social-link {
-  color: #fff;
-}
-.footer .social-link:hover {
-  color: #2caeba;
-}
+// .footer .social-link {
+//   color: #fff;
+// }
+// .footer .social-link:hover {
+//   color: #2caeba;
+// }

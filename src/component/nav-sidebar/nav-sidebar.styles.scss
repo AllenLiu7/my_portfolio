@@ -1,3 +1,5 @@
+@import '../../utilities/variables';
+
 .sidebar {
   background: white;
   position: fixed;
@@ -23,10 +25,11 @@
   display: block;
   text-align: center;
   text-transform: capitalize;
-  color: hsl(210, 22%, 49%);
+  color: $--grey-1;
   letter-spacing: 0.2rem;
-  margin-bottom: 0.5rem;
-  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  font-weight: 600;
   transition: all 0.3s linear;
   border-radius: 0.25rem;
 }
@@ -41,7 +44,7 @@
   font-size: 2.5rem;
   background: transparent;
   border-color: transparent;
-  color: hsl(360, 67%, 44%);
+  color: $--grey-1;
   cursor: pointer;
 }
 @media screen and (min-width: 992px) {
