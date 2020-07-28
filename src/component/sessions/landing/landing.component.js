@@ -8,7 +8,6 @@ export default function Landing() {
       <div className='landing__typist'>
         <MyTypist />
       </div>
-
       <div className='landing__image-container'>
         <img
           src={require('../../../assets/images/dogs-5021084_1280.jpg')}

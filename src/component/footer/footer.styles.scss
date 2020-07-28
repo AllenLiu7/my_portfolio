@@ -1,18 +1,15 @@
-@import '../../utilities/variables';
-
 .footer {
-  height: 10rem;
+  height: 9rem;
   background: #222;
   text-align: center;
   display: grid;
   place-items: center;
   @media screen and (max-width: 500px) {
-    height: 9rem;
+    height: 6rem;
   }
 }
 .footer h4 {
-  margin-top: 0rem;
-  margin-bottom: 1rem;
+  margin-top: 0.5rem;
   font-size: 1.5rem;
   color: white;
   font-weight: normal;
@@ -24,20 +21,11 @@
 }
 
 .footer-links {
-  margin: 1rem auto 1rem auto;
-
-  @media screen and (max-width: 500px) {
-    margin: 0 auto 0.5rem;
-  }
+  margin: 0 auto 1rem auto;
 }
-.footer .social-link {
-  font-size: 3rem;
-  color: #fff;
-
-  @media screen and (max-width: 500px) {
-    font-size: 2rem;
-  }
-}
-.footer .social-link:hover {
-  color: $color-primary;
-}
+// .footer .social-link {
+//   color: #fff;
+// }
+// .footer .social-link:hover {
+//   color: #2caeba;
+// }

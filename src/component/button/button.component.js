@@ -1,6 +1,6 @@
-import React, { Children } from 'react';
+import React from 'react';
 import './button.styles.scss';
 
-export default function Button({ children }) {
-  return <button className='btn btn--orange btn--animated'>{children}</button>;
+export default function Button() {
+  return <button className='btn btn--orange btn--animated'>Summit</button>;
 }

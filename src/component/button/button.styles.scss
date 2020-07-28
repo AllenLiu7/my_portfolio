@@ -7,10 +7,9 @@ $color-white: #fff;
   &:link,
   &:visited {
     text-decoration: none;
-    font-size: 1.5rem;
     display: inline-block;
     padding: 1rem 6rem;
-    border-radius: 1rem;
+    border-radius: 4rem;
     transition: all 0.2s;
     position: relative;
     border: none;
@@ -50,7 +49,7 @@ $color-white: #fff;
     display: inline-block;
     height: 100%;
     width: 100%;
-    border-radius: 1rem;
+    border-radius: 100px;
     position: absolute;
     top: 0;
     left: 0;

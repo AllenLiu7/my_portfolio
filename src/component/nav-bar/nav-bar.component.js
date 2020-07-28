@@ -1,5 +1,5 @@
 import React from 'react';
-import NavLink from '../../constants/nav-bar-links/nab-bar-links.component';
+import NavLink from '../nav-bar-links/nab-bar-links.component';
 
 import { FaBars } from 'react-icons/fa';
 import './nav-bar.styles.scss';
