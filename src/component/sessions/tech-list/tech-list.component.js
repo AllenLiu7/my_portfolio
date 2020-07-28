@@ -18,6 +18,7 @@ export default function TechList() {
         'Bootstrap',
         'Javascript',
         'jQuery',
+        'Pug',
         'React',
         'Redux',
         'Redux Thunk',

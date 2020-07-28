@@ -7,9 +7,9 @@ export default class ProjectList extends Component {
   render() {
     const projects = [
       {
-        title: 'Passport Login System',
+        title: 'Passport Authentication System',
         description:
-          'This app is a login system built by React, Redux-Saga, PassportJS and MongoDB Atlas. User can log in by registered email and password or use google or facebook Oauth to reveal the secrect with login persistant provided by express session. Since the state and action is handled by redux-saga, this app can easily be the starting point of a large project that needs a login system.',
+          'This app is a authentication system built by React, Redux, Redux-Saga, PassportJS and MongoDB Atlas. User can login by registered email and password or use google or facebook Oauth to reveal the secrect with login persistant using express session. Since the state and action is handled by redux-saga, this app can easily be the starting point of a large project that needs a authentication system.',
         imageUrl: 'assets/images/react-passport.png',
         github:
           'https://github.com/AllenLiu7/React-Passport-Authentication-Heroku',
@@ -21,13 +21,12 @@ export default class ProjectList extends Component {
       {
         title: 'Online Cloth Shop',
         description:
-          'This website is an online shop. It is a project based course taught by Mr YiHua Zhang on Udemy. The frontend of this website is built with React and Redux-Saga. User data and product data are stored at Firebase and authentication system is built upon Firebase. A connnected Stripe button conponent is used in the check out page for the mock payment.',
+          'This website is an online shop. It is a project based course taught by Mr YiHua Zhang on Udemy. The frontend of this website is built with React and Redux-Saga. User data and product data are stored at Fire store and authentication system is built upon Firebase. A connnected Stripe button conponent is used in the check out page for the mock payment.',
         imageUrl: 'assets/images/cloth-shop.png',
         github: 'https://github.com/AllenLiu7/A-cloth-online-shop',
         liveDemo: 'https://cloth-ecommerce-allenliu.netlify.app/',
         id: 2,
-        tech:
-          'React, Sass, Redux, Redux-saga, Express, Node.js, Firebase, Netlify',
+        tech: 'React, Sass, Redux, Redux-saga, Firebase, Netlify',
       },
       {
         title: 'My Portfolio Site',

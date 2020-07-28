@@ -38,7 +38,7 @@ const NavLink = (props) => {
               to={link.url}
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={-180}
               duration={500}
             >
               {link.text}
