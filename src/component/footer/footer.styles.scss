@@ -1,11 +1,13 @@
+@import '../../utilities/variables';
+
 .footer {
-  height: 9rem;
+  height: 10rem;
   background: #222;
   text-align: center;
   display: grid;
   place-items: center;
   @media screen and (max-width: 500px) {
-    height: 6rem;
+    height: 7rem;
   }
 }
 .footer h4 {
@@ -23,9 +25,14 @@
 .footer-links {
   margin: 0 auto 1rem auto;
 }
-// .footer .social-link {
-//   color: #fff;
-// }
-// .footer .social-link:hover {
-//   color: #2caeba;
-// }
+.footer .social-link {
+  font-size: 3rem;
+  color: white;
+
+  @media screen and (max-width: 500px) {
+    font-size: 2rem;
+  }
+}
+.footer .social-link:hover {
+  color: $--orange-1;
+}

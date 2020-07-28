@@ -32,9 +32,7 @@
   cursor: pointer;
   transition: all 0.3s linear;
 }
-.nav-btn:hover {
-  color: hsl(185, 84%, 25%);
-}
+
 .nav-links {
   display: none;
 }
@@ -60,8 +58,8 @@
     padding: 0.5rem 0;
   }
   .nav-links a:hover {
-    color: #e2b00c;
-    box-shadow: 0px 2px #e2b00c;
+    color: $--orange-1;
+    box-shadow: 0px 2px $--orange-1;
   }
   .nav-center {
     display: grid;

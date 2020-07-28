@@ -1,7 +1,7 @@
 import React from 'react';
 import SideLink from '../side-bar-links/side-bar-links.component';
 import './nav-sidebar.styles.scss';
-//import SocialLinks from '../constants/socialLinks';
+import SocialLinks from '../social-links/social-links.component';
 import { FaTimes } from 'react-icons/fa';
 
 const Sidebar = ({ isOpen, toggleSidebar }) => {
@@ -15,6 +15,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
           styleClass={`${isOpen ? 'sidebar-links' : ''}`}
           toggleSidebar={toggleSidebar}
         />
+        <SocialLinks styleClass={`${isOpen ? 'sidebar-icons' : ''}`} />
       </div>
     </aside>
   );
