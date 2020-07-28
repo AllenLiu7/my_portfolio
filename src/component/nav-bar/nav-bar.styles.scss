@@ -60,8 +60,8 @@
     padding: 0.5rem 0;
   }
   .nav-links a:hover {
-    color: #e2b00c;
-    box-shadow: 0px 2px #e2b00c;
+    color: $color-primary;
+    box-shadow: 0px 2px $color-primary;
   }
   .nav-center {
     display: grid;

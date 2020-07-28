@@ -87,7 +87,7 @@ export default class Form extends Component {
               {this.state.status === 'SUCCESS' ? (
                 <p className='submit-feedback'>Thanks!</p>
               ) : (
-                <Button />
+                <Button children='Summit' />
               )}
               {this.state.status === 'ERROR' && (
                 <p className='submit-feedback'>Ooops! There was an error.</p>
