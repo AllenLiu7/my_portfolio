@@ -103,6 +103,39 @@ export default class ProjectList extends Component {
         id: 9,
         tech: 'Javascript, jQuery, CSS, Netlify',
       },
+      {
+        title: 'Employee Directory',
+        description:
+          'This Employee Directory is built with the Random User Generator API (https://randomuser.me/) to grab information for 12 random "employees". Modal is added built by javascript',
+        imageUrl: 'assets/images/API_modal.jpg',
+        github:
+          'https://github.com/AllenLiu7/A-Directory-using-Public-API-TechDegree-Project-5',
+        liveDemo: 'https://api-and-modal-practice.netlify.app/',
+        id: 10,
+        tech: 'Javascript, jQuery, CSS',
+      },
+      {
+        title: 'Pagination & Content Filter',
+        description:
+          'This web page uses JavaScript and jQuery to dynamically divide the long list of students into pages with a search feature to display only the students that match the search criteria.',
+        imageUrl: 'assets/images/contentfilter.jpg',
+        github:
+          'https://github.com/AllenLiu7/Pagination-Content-Filter-TechDegree-Project-2',
+        liveDemo: 'https://pagination-and-content-filter.netlify.app/',
+        id: 10,
+        tech: 'Javascript, jQuery, CSS',
+      },
+      {
+        title: 'Interactive Registration Form',
+        description:
+          'This is an interactive registration form built by javascript and jQuery. It has customized and conditional behavior and interactivity, and can validate user input and providing helpful error messages when the user enters invalid information into the form fields.',
+        imageUrl: 'assets/images/interact_form.jpg',
+        github:
+          'https://github.com/AllenLiu7/Interactive-Registration-Form-TechDegree-Project-3',
+        liveDemo: 'https://interactive-form1.netlify.app/',
+        id: 11,
+        tech: 'Javascript, jQuery, CSS',
+      },
     ];
     return (
       <div className='project-session' name='projects' id='projects'>
