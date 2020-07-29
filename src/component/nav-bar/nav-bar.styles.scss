@@ -31,6 +31,11 @@
   color: $--grey-1;
   cursor: pointer;
   transition: all 0.3s linear;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.nav-btn:focus {
+  outline: none !important;
 }
 
 .nav-links {

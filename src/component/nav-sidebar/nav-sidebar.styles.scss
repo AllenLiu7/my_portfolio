@@ -32,6 +32,11 @@
   font-weight: 600;
   transition: all 0.3s linear;
   border-radius: 0.25rem;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.sidebar-links li a:focus {
+  outline: none !important;
 }
 
 .close-btn {
@@ -43,11 +48,16 @@
   border-color: transparent;
   color: $--grey-1;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 @media screen and (min-width: 992px) {
   .sidebar {
     transform: translateX(-100%);
   }
+}
+
+.close-btn:focus {
+  outline: none !important;
 }
 
 .sidebar-links li {
