@@ -83,7 +83,7 @@ export default class Form extends Component {
                 Message
               </label>
             </div>
-            <div className='button'>
+            <div className='form__button'>
               {this.state.status === 'SUCCESS' ? (
                 <p className='submit-feedback'>Thanks!</p>
               ) : (
