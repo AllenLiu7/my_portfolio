@@ -1,5 +1,4 @@
 import React, { Component, Fragment } from 'react';
-import Fade from 'react-reveal/Fade';
 import 'react-responsive-modal/styles.css';
 import { Modal } from 'react-responsive-modal';
 import './project-card.styles.scss';
