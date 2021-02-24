@@ -4,66 +4,11 @@ import IconFrontend from '../../animation/icon-frontend.component';
 import IconBackend from '../../animation/icon-backend.component';
 import IconOthers from '../../animation/icon-others.component';
 import Fade from 'react-reveal/Fade';
+import techList from '../../../assets/data/tech_list'
 import './tech-list.styles.scss';
 
 export default function TechList() {
-  const techData = {
-    frontend: {
-      id: 1,
-      title: 'Frontend',
-      tech: [
-        'HTML',
-        'CSS',
-        'SASS',
-        'Bootstrap',
-        'Javascript',
-        'jQuery',
-        'Pug',
-        'React',
-        'React Native',
-        'Redux',
-        'Redux Thunk',
-        'Redux Saga',
-        'Gatsbyjs',
-        '. . .',
-      ],
-      iconUrl: 'assets/icon/iconmonstr-code-2-240.png',
-    },
-    backend: {
-      id: 2,
-      title: 'Backend',
-      tech: [
-        'nodejs',
-        'Express',
-        'Mongodb',
-        ' Mongoose',
-        'SQL',
-        'Sequalize',
-        'PassportJs',
-        'Graphql',
-        'Firebase',
-        'Contentful',
-        '. . .',
-      ],
-      iconUrl: 'assets/icon/iconmonstr-server-4-240.png',
-    },
-    others: {
-      id: 3,
-      title: 'Others',
-      tech: [
-        'Vscode',
-        'npm',
-        'git',
-        'Aglie',
-        'Figma',
-        'Notion',
-        'codepen',
-        'codesandbox',
-        '. . .',
-      ],
-      iconUrl: 'assets/icon/iconmonstr-wrench-2-240.png',
-    },
-  };
+
   return (
     <div className='tech-list__session' name='technology' id='technology'>
       <div className='tech-list__title'>
@@ -80,19 +25,19 @@ export default function TechList() {
             <div className='tech-list__card-icon'>
               <IconFrontend />
             </div>
-            <TechCard content={techData.frontend} />
+            <TechCard content={techList.frontend} />
           </div>
           <div className='tech-list__card'>
             <div className='tech-list__card-icon'>
               <IconBackend />
             </div>
-            <TechCard content={techData.backend} />
+            <TechCard content={techList.backend} />
           </div>
           <div className='tech-list__card'>
             <div className='tech-list__card-icon'>
               <IconOthers />
             </div>
-            <TechCard content={techData.others} />
+            <TechCard content={techList.others} />
           </div>
         </div>
       </Fade>
