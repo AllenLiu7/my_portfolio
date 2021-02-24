@@ -24,14 +24,14 @@ const projects = [
         tech: 'React, Sass, Redux, Redux-saga, Firebase, Netlify',
       },
       {
-        title: 'My Portfolio Site',
+        title: 'Image Uploader Using Imgur API',
         description:
-          'This website is my portfolio site built by React and Sass. It is mobile responsive using flex box, CSS grid and media query.',
-        imageUrl: 'assets/images/portfolio.jpg',
-        github: 'https://github.com/AllenLiu7/my_portfolio',
-        liveDemo: 'https://my-portfolio-allenliu.netlify.app/',
+          "This web app is used to upload images to Imgur.com and display user's images",
+        imageUrl: 'assets/images/image_uploader.png',
+        github: 'https://github.com/AllenLiu7/image-uploader-imgur-api-vue',
+        liveDemo: 'https://imageuploaderforimgur.netlify.app/',
         id: 3,
-        tech: 'React, Sass, Netlify',
+        tech: 'Vue, Vuex, Bootstrap, Netlify',
       },
       {
         title: 'Book Manager',
