@@ -2,7 +2,7 @@
 
 const projects = [
     {
-        title: 'Passport Authentication System',
+        title: 'Passport.js Authentication System',
         description:
           'This app is a authentication system built by React, Redux, Redux-Saga, PassportJS and MongoDB Atlas. User can login by registered email and password or use google or facebook Oauth to reveal the secrect with login persistant using express session. Since the state and action is handled by redux-saga, this app can easily be the starting point of a large project that needs a authentication system.',
         imageUrl: 'assets/images/react-passport.png',
