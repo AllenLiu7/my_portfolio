@@ -34,6 +34,17 @@ const projects = [
         tech: 'Vue, Vuex, Bootstrap, Netlify',
       },
       {
+        title: 'Personal Blog',
+        description:
+          'This is a simple blog app using Nextjs with dynamic routing for each post using fake REST API for learning purpose',
+          imageUrl: 'assets/images/personal_blog.png',
+        github:
+          'https://github.com/AllenLiu7/blog-routing-nextjs',
+        liveDemo: 'https://nextjs-blog-static.netlify.app/',
+        id: 4,
+        tech: 'Next.js, React, Netlify',
+      },
+      {
         title: 'Book Manager',
         description:
           'This is a library manager using simple SQLite database. It has routes to list, add, update and delete books. Technologies include Javascript, Nodejs, Express, Pug and SQL ORM Sequaelize. ',
@@ -41,7 +52,7 @@ const projects = [
         github:
           'https://github.com/AllenLiu7/Library-Manager-TechDegree-Project-10',
         liveDemo: '',
-        id: 4,
+        id: 5,
         tech: 'Javascript, Node.js, Express, Pug, Sequaelize',
       },
       {
@@ -52,7 +63,7 @@ const projects = [
         github:
           'https://github.com/AllenLiu7/Course-rating-API-TechDegree-Project-11',
         liveDemo: '',
-        id: 5,
+        id: 6,
         tech: 'MongoDB, Mongoose, Express and Node.js',
       },
       {
@@ -63,7 +74,7 @@ const projects = [
         github:
           'https://github.com/AllenLiu7/Image-Gallery-TechDegree-Project-9',
         liveDemo: 'https://react-gallery-allenliu.netlify.app/',
-        id: 6,
+        id: 7,
         tech: 'React, Netlify',
       },
       {
@@ -74,7 +85,7 @@ const projects = [
         github:
           'https://github.com/AllenLiu7/travel_agent_website--css_practice',
         liveDemo: 'https://travel-agent-allenliu.netlify.app/',
-        id: 7,
+        id: 8,
         tech: 'HTML, Sass, Netlify',
       },
       {
@@ -84,7 +95,7 @@ const projects = [
         imageUrl: 'assets/images/coffee-shop.png',
         github: 'https://github.com/AllenLiu7/ecommerce__coffeeshop--gatsby',
         liveDemo: 'https://coffee-shop-allenliu.netlify.app/',
-        id: 8,
+        id: 9,
         tech: 'React, GatsbyJS, Contentful, Netlify',
       },
       {
@@ -95,7 +106,7 @@ const projects = [
         github: 'https://github.com/AllenLiu7/Tic-Tac-Toe-TechDegree-Project-4',
         liveDemo:
           'https://allenliu7.github.io/Tic-Tac-Toe-TechDegree-Project-4/',
-        id: 9,
+        id: 10,
         tech: 'Javascript, jQuery, CSS, Netlify',
       },
       {
@@ -106,7 +117,7 @@ const projects = [
         github:
           'https://github.com/AllenLiu7/A-Directory-using-Public-API-TechDegree-Project-5',
         liveDemo: 'https://api-and-modal-practice.netlify.app/',
-        id: 10,
+        id: 11,
         tech: 'Javascript, jQuery, CSS',
       },
       {
@@ -117,7 +128,7 @@ const projects = [
         github:
           'https://github.com/AllenLiu7/Pagination-Content-Filter-TechDegree-Project-2',
         liveDemo: 'https://pagination-and-content-filter.netlify.app/',
-        id: 10,
+        id: 12,
         tech: 'Javascript, jQuery, CSS',
       },
       {
@@ -128,7 +139,7 @@ const projects = [
         github:
           'https://github.com/AllenLiu7/Interactive-Registration-Form-TechDegree-Project-3',
         liveDemo: 'https://interactive-form1.netlify.app/',
-        id: 11,
+        id: 13,
         tech: 'Javascript, jQuery, CSS',
       },
 ];

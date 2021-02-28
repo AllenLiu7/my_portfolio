@@ -23,9 +23,7 @@ export default class Form extends Component {
     return (
       <Fade>
         <div className='contact'>
-          <div className='contact__image'>
-            <img src={MyPhoto} alt='me' />
-          </div>
+      
           <form
             action={process.env.REACT_APP_FORMSPREE}
             method='POST'
@@ -118,3 +116,10 @@ export default class Form extends Component {
     xhr.send(data);
   };
 }
+
+
+
+
+// <div className='contact__image'>
+// <img src={MyPhoto} alt='me' />
+// </div>
