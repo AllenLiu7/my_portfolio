@@ -19,11 +19,6 @@ const data = [
   },
   {
     id: 4,
-    icon: <FaInstagramSquare className='social-icon'></FaInstagramSquare>,
-    url: 'https://www.instagram.com/kei_l_/?hl=en',
-  },
-  {
-    id: 5,
     icon: <FaMedium className='social-icon'></FaMedium>,
     url: 'https://medium.com/@allen6qi',
   },
