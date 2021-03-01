@@ -8,7 +8,6 @@ const techList = {
         'SASS',
         'Bootstrap',
         'Javascript',
-        'TypeScript',
         'jQuery',
         'React',
         'Redux',
