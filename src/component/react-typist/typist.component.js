@@ -16,7 +16,7 @@ export default function MyTypist() {
       <div className='fade-content'>
         <Fade delay={2200}>
           <br />
-          <span>I am a front-end web developer.</span>
+          <span>I am a full-stack web developer.</span>
         </Fade>
       </div>
     </>
