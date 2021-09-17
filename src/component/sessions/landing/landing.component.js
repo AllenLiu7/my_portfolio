@@ -10,7 +10,7 @@ export default function Landing() {
       </div>
       <div className='landing__image-container'>
         <img
-          src={require('../../../assets/images/dogs-5021084_1280.jpg')}
+          src={require('../../../assets/images/landing-dog.jpg')}
           alt='pic'
         />
         <div className='landing__overlay'></div>

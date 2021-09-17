@@ -3,7 +3,6 @@ import Button from '../button/button.component';
 
 import Fade from 'react-reveal/Fade';
 import './form.styles.scss';
-import MyPhoto from '../../assets/images/my-photo.jpg';
 
 export default class Form extends Component {
   state = {
@@ -23,7 +22,6 @@ export default class Form extends Component {
     return (
       <Fade>
         <div className='contact'>
-      
           <form
             action={process.env.REACT_APP_FORMSPREE}
             method='POST'
@@ -116,9 +114,6 @@ export default class Form extends Component {
     xhr.send(data);
   };
 }
-
-
-
 
 // <div className='contact__image'>
 // <img src={MyPhoto} alt='me' />
