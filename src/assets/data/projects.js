@@ -3,7 +3,7 @@ const projects = [
     title: 'Social Media Doggy',
     description:
       'This app is a social media app which let users to create their own profile and share their daily life with friends. Users can follow/unfollow friends and like/unlike their posts.',
-    imageUrl: 'assets/images/doggy.png',
+    imageUrl: 'assets/images/doggy.jpg',
     github: 'https://github.com/AllenLiu7/doggy-dev',
     liveDemo: 'https://doggy-testing-4odtf.ondigitalocean.app/',
     id: 1,
